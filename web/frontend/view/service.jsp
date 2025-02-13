@@ -65,7 +65,7 @@
                                 <li>★ Experienced and professional staff</li>
                                 <li>★ Affordable and transparent pricing</li>
                             </ul>
-                            <a href="service_details.html" class="btn float-end" style="background-color: #FF3414; color: #fff;">Watch more</a>
+                            <a href="service_detail?id=1" class="btn float-end" style="background-color: #FF3414; color: #fff;">Watch more</a>
                         </div>
                     </div>
                 </div>
