@@ -569,7 +569,7 @@ h3 {
 
 /* line 95, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_btn.scss */
 .boxed-btn3-line {
-  color: #FF3414 !important;
+  color: black !important;
   display: inline-block;
   padding: 14px 31px;
   font-family: "Poppins", sans-serif;
@@ -1056,15 +1056,15 @@ h3 {
 /* line 115, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment .book_btn a {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#FF3414+0,fd8e5e+100 */
-  background: #fdae5c;
+  background: #dce620;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #fdae5c 0%, #fd8e5e 100%);
+  background: -moz-linear-gradient(top, #dce620 0%, #c4b61a 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #fdae5c 0%, #fd8e5e 100%);
+  background: -webkit-linear-gradient(top, #dce620 0%, #c4b61a 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #fdae5c 0%, #fd8e5e 100%);
+  background: linear-gradient(to bottom, #dce620 0%, #c4b61a 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF3414', endColorstr='#fd8e5e',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF3414', endColorstr='#c4b61a',GradientType=0 );
   /* IE6-9 */
   padding: 13px 26px;
   font-size: 14px;
@@ -1086,15 +1086,15 @@ h3 {
 /* line 133, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment .book_btn a:hover {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#FF3414+0,fd8e5e+100 */
-  background: #fdae5c;
+  background: #dce620;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #fdae5c 0%, #fd8e5e 100%);
+  background: -moz-linear-gradient(top, #dce620 0%, #c4b61a 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #fdae5c 0%, #fd8e5e 100%);
+  background: -webkit-linear-gradient(top, #dce620 0%, #c4b61a 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #fdae5c 0%, #fd8e5e 100%);
+  background: linear-gradient(to bottom, #dce620 0%, #c4b61a 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF3414', endColorstr='#fd8e5e',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF3414', endColorstr='#c4b61a',GradientType=0 );
   /* IE6-9 */
 }
 
@@ -1393,7 +1393,7 @@ h3 {
 
 /* line 20, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
 .slider_area .single_slider {
-  height: 700px;
+  height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -5009,14 +5009,14 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 
 /* line 4, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_bradcam.scss */
 .bradcam_bg_2 {
-  background-image: url(../img/banner/bradcam2.png);
+  background-image: url(../img/banner/info_banner.png);
 }
 
 /* line 7, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_bradcam.scss */
 .bradcam_area {
   background-size: cover;
   background-position: center center;
-  padding: 115px 0 115px 0;
+  padding: 85px 0 85px 0;
   background-repeat: no-repeat;
   position: relative;
   z-index: 0;
@@ -5024,7 +5024,7 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 
 /* line 15, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_bradcam.scss */
 .bradcam_area.bradcam_area2 {
-  padding: 265px 0;
+  padding: 175px 0;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

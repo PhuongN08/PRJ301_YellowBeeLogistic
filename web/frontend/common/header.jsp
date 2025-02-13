@@ -52,7 +52,7 @@
                                 <div class="header_right d-flex align-items-center">
                                     <div class="short_contact_list">
                                         <ul>
-                                            <li><a href=""> <i class="fa fa-envelope"style="color: black"></i> info@docmed.com</a></li>
+                                            <li><a href=""> <i class="fa fa-envelope"style="color: black"></i> yellowbee@transport.com</a></li>
                                             <li><a href=""> <i class="fa fa-phone"style="color: black"></i> 1601-609 6780</a></li>
                                         </ul>
                                     </div>

@@ -44,30 +44,29 @@
                 <div class="col-xl-6 col-lg-6 col-md-6">
                     <div class="location_left">
                         <div class="logo">
-                            <a href="index.html">
-                                <img src="img/logo.png" alt="">
+                            <a href="homepage">
+                                <img src="img/about/logo2.png" alt="" width="150" height="75">
                             </a>
                         </div>
                         <ul>
-                            <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                            <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
-                            <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                            <li><a href="#"> <i class="fa fa-youtube"></i> </a></li>
+                            <li><a href="https://www.youtube.com/watch?v=STzK1XrpoBs"> <i class="fa fa-facebook"></i> </a></li>
+                            <li><a href="https://www.youtube.com/watch?v=2YHcKPGEbSo"> <i class="fa fa-google-plus"></i> </a></li>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <i class="fa fa-twitter"></i> </a></li>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <i class="fa fa-youtube"></i> </a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-3">
                     <div class="single_location">
                         <h3> <img src="img/icon/address.svg" alt=""> Location</h3>
-                        <p>600/D, Kings road, Green lane
-                            NewYork-2563</p>
+                        <p>47, Pham Van Dong Road, Mai Dich, Bac Tu Liem, Hanoi</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-3">
                     <div class="single_location">
-                        <h3> <img src="img/icon/support.svg" alt=""> Location</h3>
+                        <h3> <img src="img/icon/support.svg" alt=""> Contact</h3>
                         <p>+10 267 3563 4562 <br>
-                            support@logistico.com</p>
+                            yellowbee@transport.com</p>
                     </div>
                 </div>
             </div>
