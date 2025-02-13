@@ -4,8 +4,16 @@
         <servlet-name>HomePageServlet</servlet-name>
         <servlet-class>Controller.HomePageServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServiceServlet</servlet-name>
+        <servlet-class>Controller.ServiceServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomePageServlet</servlet-name>
         <url-pattern>/homepage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServiceServlet</servlet-name>
+        <url-pattern>/service</url-pattern>
     </servlet-mapping>
 </web-app>
