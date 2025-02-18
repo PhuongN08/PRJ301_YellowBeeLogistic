@@ -83,9 +83,9 @@
                                                 <li><a  href="homepage">Home</a></li>
                                                 <li><a href="service">Services <i class="ti-angle-down"></i></a>
                                                     <ul class="submenu">
-                                                        <li><a href="service_details.html">Home Removals</a></li>
-                                                        <li><a href="service_details.html">Office Removals</a></li>
-                                                        <li><a href="service_details.html">Trucks Rental</a></li>
+                                                        <li><a href="service_detail?id=1">Home Removals</a></li>
+                                                        <li><a href="service_detail?id=2">Office Removals</a></li>
+                                                        <li><a href="service_detail?id=3">Trucks Rental</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a  href="price">Price</a></li>
