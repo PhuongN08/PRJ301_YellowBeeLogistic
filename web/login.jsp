@@ -102,7 +102,7 @@
                             </div>
 
                             <div class="form-link">
-                                <a href="forgotPassword" class="forgot-pass">Forgot password?</a>
+                                <a href="forgotPassword.jsp" class="forgot-pass">Forgot password?</a>
                             </div>
 
                             <div class="field button-field">
@@ -113,7 +113,7 @@
 
                         <!--Sign up link, redirect to path /signup-->
                         <div class="form-link">
-                            <span>Don't have an account? <a href="signup">Signup</a></span>
+                            <span>Don't have an account? <a href="signup.jsp">Signup</a></span>
                         </div>
                     </div>
 
