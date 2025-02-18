@@ -77,7 +77,7 @@
                                     <img src="img/service/service1.png" alt="">
                                 </div>
                                 <div class="service_info">
-                                    <h3><a href="service_details.html">Home Removal</a></h3>
+                                    <h3><a href="service_detail?id=1">Home Removal</a></h3>
                                     <p>At Yellow Bee Transport, we ensure a stress-free home moving experience, 
                                         handling your belongings with care from start to finish.</p>
                                 </div>
@@ -89,7 +89,7 @@
                                     <img src="img/service/service2.png" alt="">
                                 </div>
                                 <div class="service_info">
-                                    <h3><a href="service_details.html">Office Removal</a></h3>
+                                    <h3><a href="service_detail?id=2">Office Removal</a></h3>
                                     <p>Minimize downtime with our efficient office removal service, 
                                         designed to get your business back up and running swiftly.</p>
                                 </div>
@@ -102,7 +102,7 @@
                                     <img src="img/service/2.png" alt="">
                                 </div>
                                 <div class="service_info">
-                                    <h3><a href="service_details.html">Truck Rental</a></h3>
+                                    <h3><a href="service_detail?id=3">Truck Rental</a></h3>
                                     <p>Need flexibility? Our reliable truck rental service 
                                         offers the right vehicle for your moving needs, on your schedule.</p>
                                 </div>
@@ -148,7 +148,7 @@
                                     <li> Flexible scheduling to suit your timeline.</li>
                                 </ul>
                                 <div class="about_btn">
-                                    <a class="boxed-btn3-line" href="about.html">About Us</a>
+                                    <a class="boxed-btn3-line" href="about">About Us</a>
                                 </div>
                             </div>
                         </div>
@@ -169,7 +169,7 @@
             </div>
             <div class="col-xl-5 col-md-6">
                 <div class="call_add_action">
-                    <a href="#" class="boxed-btn3">+10 672 457 356</a>
+                    <a href="contact" class="boxed-btn3">+10 672 457 356</a>
                 </div>
             </div>
         </div>
