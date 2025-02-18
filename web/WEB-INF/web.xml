@@ -12,6 +12,10 @@
         <servlet-name>ServiceDetailServlet</servlet-name>
         <servlet-class>Controller.ServiceDetailServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>PriceServlet</servlet-name>
+        <servlet-class>Controller.PriceServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomePageServlet</servlet-name>
         <url-pattern>/homepage</url-pattern>
@@ -23,5 +27,9 @@
     <servlet-mapping>
         <servlet-name>ServiceDetailServlet</servlet-name>
         <url-pattern>/service_detail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PriceServlet</servlet-name>
+        <url-pattern>/price</url-pattern>
     </servlet-mapping>
 </web-app>

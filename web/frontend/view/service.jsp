@@ -57,7 +57,7 @@
                             <img src="img/service/service1.png" class="img-fluid" alt="">
                         </div>
                         <div class="col-md-8">
-                            <h3><a href="service_details.html">Home Removal</a></h3>
+                            <h3><a href="service_detail?id=1">Home Removal</a></h3>
                             <p>At Yellow Bee Transport, we ensure a stress-free home moving experience, 
                                 handling your belongings with care from start to finish.</p>
                             <ul>
@@ -77,7 +77,7 @@
                             <img src="img/service/service2.png" class="img-fluid" alt="">
                         </div>
                         <div class="col-md-8">
-                            <h3><a href="service_details.html">Office Removal</a></h3>
+                            <h3><a href="service_detail?id=2">Office Removal</a></h3>
                             <p>Minimize downtime with our efficient office removal service, 
                                 designed to get your business back up and running swiftly.</p>
                             <ul>
@@ -85,7 +85,7 @@
                                 <li>★ Minimal business interruption</li>
                                 <li>★ Customized moving solutions</li>
                             </ul>
-                            <a href="service_details.html" class="btn float-end" style="background-color: #FF3414; color: #fff;">Watch more</a>
+                            <a href="service_detail?id=2" class="btn float-end" style="background-color: #FF3414; color: #fff;">Watch more</a>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                             <img src="img/service/2.png" class="img-fluid" alt="">
                         </div>
                         <div class="col-md-8">
-                            <h3><a href="service_details.html">Truck Rental</a></h3>
+                            <h3><a href="service_detail?id=3">Truck Rental</a></h3>
                             <p>Need flexibility? Our reliable truck rental service 
                                 offers the right vehicle for your moving needs, on your schedule.</p>
                             <ul>
@@ -105,7 +105,7 @@
                                 <li>★ Well-maintained vehicles</li>
                                 <li>★ Competitive rental rates</li>
                             </ul>
-                            <a href="service_details.html" class="btn float-end" style="background-color: #FF3414; color: #fff;">Watch more</a>
+                            <a href="service_detail?id=3" class="btn float-end" style="background-color: #FF3414; color: #fff;">Watch more</a>
                         </div>
                     </div>
                 </div>

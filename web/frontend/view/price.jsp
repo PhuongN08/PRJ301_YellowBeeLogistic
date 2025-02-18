@@ -1,9 +1,4 @@
-<%-- 
-    Document   : service
-    Created on : Feb 13, 2025, 7:37:02 AM
-    Author     : nguye
---%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -34,6 +29,30 @@
 
         <link rel="stylesheet" href="css/style.css">
         <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+        <style>
+            table {
+                width: 80%;
+                border-collapse: collapse;
+                margin: 50px auto;
+            }
+            table, th, td {
+                border: 1px solid #ccc;
+            }
+            th, td {
+                padding: 10px;
+                text-align: center;
+            }
+            th {
+                background-color: #f4b400;
+                color: white;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            tr:hover {
+                background-color: #f1f1f1;
+            }
+        </style>
     </head>
     <body>
         <jsp:include page="/frontend/common/header.jsp" />
@@ -42,33 +61,34 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="bradcam_text text-center">
-                            <h3>${service.serviceName}</h3>
+                            <h3>Removal Price</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--/ bradcam_area  -->
-
-        <!-- service_details_start  -->
         <div class="service_details_area">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8">
-                        <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                                 aria-labelledby="v-pills-home-tab">
-                                <div class="service_details_info">
-                                    <h3></h3>
-                                    <p>
-                                        ${service.serviceDescribe}
-                                    </p>
-                                </div>
-                                <div class="service_thumb">
-                                    <img class="img-fluid" src="" alt="">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-lg-12 col-md-12">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Describe</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <c:forEach var="item" items="${listCost}">
+                                        <tr>
+                                            <td>${item.PriceCostID}</td>
+                                            <td>${item.Description}</td>
+                                            <td>${item.Cost}</td>
+                                        </tr>
+                                    </c:forEach>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

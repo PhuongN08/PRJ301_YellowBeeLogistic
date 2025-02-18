@@ -50,7 +50,7 @@
                                 <h3>Buzzing Through Hassle </h3>
                                 <h3>Free Moves</h3>
 
-                                <a class="boxed-btn3" href="service.html">Our Services</a>
+                                <a class="boxed-btn3" href="service">Our Services</a>
                             </div>
                         </div>
                     </div>
