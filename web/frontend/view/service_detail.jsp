@@ -54,22 +54,17 @@
         <div class="service_details_area">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-8">
-                        <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                                 aria-labelledby="v-pills-home-tab">
-                                <div class="service_details_info">
-                                    <h3></h3>
-                                    <p>
-                                        ${service.serviceDescribe}
-                                    </p>
-                                </div>
-                                <div class="service_thumb">
-                                    <img class="img-fluid" src="" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="section-top-border">
+				<h3 class="mb-30">Service Detail</h3>
+				<div class="row">
+					<div class="col-md-3">
+						<img src="${service.serviceImage}" alt="" class="img-fluid">
+					</div>
+					<div class="col-md-9 mt-sm-20">
+						<p>${service.serviceDescribe}</p>
+					</div>
+				</div>
+			</div>
                 </div>
             </div>
         </div>
