@@ -3,20 +3,34 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
 
-package Controller;
-
+package Auther;
+import DAO.userDAO;
 import java.io.IOException;
-import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Scanner;
+import java.util.UUID;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import Model.User;
+import java.io.PrintWriter;
+import org.json.JSONObject;
+import utils.constants;
+import utils.emailSender;
+import utils.expirationTimer;
+import utils.htmlMailTemplate;
 /**
  *
  * @author regio
  */
-public class verifyEmailController extends HttpServlet {
+public class resetPasswordController extends HttpServlet {
    
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -33,10 +47,10 @@ public class verifyEmailController extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet verifyMailController</title>");  
+            out.println("<title>Servlet resetPasswordController</title>");  
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet verifyMailController at " + request.getContextPath () + "</h1>");
+            out.println("<h1>Servlet resetPasswordController at " + request.getContextPath () + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
