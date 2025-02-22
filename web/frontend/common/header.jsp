@@ -58,7 +58,7 @@
                                     </div>
 
                                     <div class="book_btn d-none d-lg-block">
-                                        <a class="boxed-btn3-line" href="login.jsp">Login</a>
+                                        <a class="boxed-btn3-line" href="login">Login</a>
                                     </div>
                                 </div>
                             </div>
