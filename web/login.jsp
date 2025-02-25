@@ -3,6 +3,11 @@
     Created on : Feb 10, 2025, 6:32:43 PM
     Author     : regio
 --%>
+<<<<<<< Updated upstream
+=======
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+>>>>>>> Stashed changes
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,6 +20,7 @@
         <!-- Boxicons CSS -->
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
+<<<<<<< Updated upstream
         <!-- Bootstrap 5 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -36,6 +42,64 @@
                             Login
                         </div>
                     </div>
+=======
+        <!-- CSS here -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <style>
+            .avatar-circle {
+                width: 40px;
+                height: 40px;
+                background-color: #007bff;
+                color: white;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                font-size: 20px;
+                margin-right: 10px;
+            }
+            .user-info {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+            <div class="card p-4 shadow-lg" style="width: 400px;">
+                <h3 class="text-center mb-4">Login</h3>
+
+                <c:if test="${not empty error}">
+                    <div class="alert alert-danger text-center">${error}</div>
+                </c:if>                
+
+                    <%@ include file="backHome.jsp" %>
+                <form action="login" method="post">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+                    </div>
+                    <div class="text-left mt-2">
+                        <a href="forgotPassword.jsp">Forgot your password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+
+                <div class="text-center mt-2">
+                    <a href="signup.jsp">Don't have accounts yet? Sign up</a>
+>>>>>>> Stashed changes
                 </div>
             </div>
         </header>
@@ -149,6 +213,7 @@
                             </div>
                             <!-- Grid column -->
 
+<<<<<<< Updated upstream
                             <!-- Grid column -->
                             <div class="col-6 col-sm-4 col-lg-2">
                                 <!-- Links -->
@@ -234,3 +299,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
+=======
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>
+>>>>>>> Stashed changes

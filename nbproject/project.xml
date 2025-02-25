@@ -7,10 +7,6 @@
             <minimum-ant-version>1.6.5</minimum-ant-version>
             <web-module-libraries>
                 <library dirs="200">
-                    <file>${file.reference.mssql-jdbc-12.8.1.jre11.jar}</file>
-                    <path-in-war>WEB-INF/lib</path-in-war>
-                </library>
-                <library dirs="200">
                     <file>${file.reference.sqljdbc42.jar}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
@@ -30,6 +26,13 @@
                     <file>${file.reference.json-20231013.jar}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
+<<<<<<< Updated upstream
+=======
+                <library dirs="200">
+                    <file>${file.reference.jaxb-api-2.3.1.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+>>>>>>> Stashed changes
             </web-module-libraries>
             <web-module-additional-libraries/>
             <source-roots>
