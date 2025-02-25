@@ -42,29 +42,67 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="bradcam_text text-center">
-                            <h3>${service.serviceName}</h3>
+                            <h3>About Us</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--/ bradcam_area  -->
-
-        <!-- service_details_start  -->
-        <div class="service_details_area">
-            <div class="container">
-                <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
                     <div class="section-top-border">
-				<h3 class="mb-30">Service Detail</h3>
-				<div class="row">
-					<div class="col-md-3">
-						<img src="${service.serviceImage}" alt="" class="img-fluid">
-					</div>
-					<div class="col-md-9 mt-sm-20">
-						<p>${service.serviceDescribe}</p>
-					</div>
-				</div>
-			</div>
+                        <h3 class="mb-30">Company Principles </h3>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <blockquote class="generic-blockquote">
+                                    "At Yellow Bee Transport, our vision is to redefine logistics with reliability, speed, and exceptional service. 
+                                    We are committed to delivering every package with precision and care, ensuring customer satisfaction at every step. 
+                                    Our team thrives on innovation, operational excellence, and sustainable practices, driving us to exceed expectations. 
+                                    Together, we’re not just moving goods – we’re building trust and connecting lives."
+                                    <footer class="blockquote-footer">
+                                        -Sophia Rain, CEO of YBT-
+                                    </footer>
+                                </blockquote>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="section-top-border">
+                        <h3 class="mb-30">About Yellow Bee Transport</h3>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="single-defination">
+                                    <h4 class="mb-20">History</h4>
+                                    <p>Over the past 10 years, Yellow Bee Transport has grown from a small startup to a leading name in logistics. 
+                                        With a commitment to reliability and speed, we expanded nationwide, connecting people and businesses. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-defination">
+                                    <h4 class="mb-20">Staff</h4>
+                                    <p>At Yellow Bee Transport, our team is our greatest asset. 
+                                        Committed, skilled, and passionate, our employees work tirelessly 
+                                        to ensure every delivery is seamless and timely.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-defination">
+                                    <h4 class="mb-20">Why Choose Us</h4>
+                                    <p>Choose Yellow Bee Transport for reliable and fast deliveries you can trust. 
+                                        We prioritize customer satisfaction with personalized service and efficient solutions. 
+                                        Our commitment to innovation and sustainability ensures your goods are handled with care and responsibility.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -5,10 +5,12 @@
 package Model;
 import lombok.Builder;
 import lombok.Data;
+
 /**
  *
  * @author regio
  */
+
 @Data
 @Builder
 

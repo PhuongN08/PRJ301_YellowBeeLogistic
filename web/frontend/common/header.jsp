@@ -64,7 +64,7 @@
                                     <% if (username == null) { %>
                                     <!-- Hiển thị nút Login nếu chưa đăng nhập -->
                                     <div class="book_btn d-none d-lg-block">
-                                        <a class="boxed-btn3-line" href="login.jsp">Login</a>
+                                        <a class="boxed-btn3-line" href="login">Login</a>
                                     </div>
                                     <% } else { %>
                                     <!-- Hiển thị avatar nếu đã đăng nhập -->
@@ -105,9 +105,9 @@
                                                 <li><a  href="homepage">Home</a></li>
                                                 <li><a href="service">Services <i class="ti-angle-down"></i></a>
                                                     <ul class="submenu">
-                                                        <li><a href="service_details.html">Home Removals</a></li>
-                                                        <li><a href="service_details.html">Office Removals</a></li>
-                                                        <li><a href="service_details.html">Trucks Rental</a></li>
+                                                        <li><a href="service_detail?id=1">Home Removals</a></li>
+                                                        <li><a href="service_detail?id=2">Office Removals</a></li>
+                                                        <li><a href="service_detail?id=3">Trucks Rental</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a  href="price">Price</a></li>

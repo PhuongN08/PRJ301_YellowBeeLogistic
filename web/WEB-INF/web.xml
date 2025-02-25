@@ -16,7 +16,6 @@
         <servlet-name>PriceServlet</servlet-name>
         <servlet-class>Controller.PriceServlet</servlet-class>
     </servlet>
-
     <servlet>
         <servlet-name>AboutUsServlet</servlet-name>
         <servlet-class>Controller.AboutUsServlet</servlet-class>
@@ -27,6 +26,7 @@
     </servlet>
     <servlet>
         <servlet-name>LoginController</servlet-name>
+
         <servlet-class>Auther.loginController</servlet-class>
     </servlet>
     <servlet>
@@ -40,7 +40,7 @@
     <servlet>
         <servlet-name>ResetpasswordController</servlet-name>
         <servlet-class>Auther.resetPasswordController</servlet-class>
-    </servlet>
+    
 
     <servlet-mapping>
         <servlet-name>HomePageServlet</servlet-name>
@@ -71,6 +71,7 @@
         <servlet-name>LoginController</servlet-name>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>SignupController</servlet-name>
         <url-pattern>/signup</url-pattern>
