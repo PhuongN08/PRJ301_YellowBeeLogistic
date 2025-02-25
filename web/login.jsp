@@ -3,11 +3,11 @@
     Created on : Feb 10, 2025, 6:32:43 PM
     Author     : regio
 --%>
-<<<<<<< Updated upstream
+
 =======
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
->>>>>>> Stashed changes
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +20,7 @@
         <!-- Boxicons CSS -->
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-<<<<<<< Updated upstream
+
         <!-- Bootstrap 5 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -99,7 +99,7 @@
 
                 <div class="text-center mt-2">
                     <a href="signup.jsp">Don't have accounts yet? Sign up</a>
->>>>>>> Stashed changes
+
                 </div>
             </div>
         </header>
@@ -213,7 +213,7 @@
                             </div>
                             <!-- Grid column -->
 
-<<<<<<< Updated upstream
+
                             <!-- Grid column -->
                             <div class="col-6 col-sm-4 col-lg-2">
                                 <!-- Links -->
@@ -306,4 +306,4 @@
         
     </body>
 </html>
->>>>>>> Stashed changes
+

@@ -16,8 +16,7 @@
         <servlet-name>PriceServlet</servlet-name>
         <servlet-class>Controller.PriceServlet</servlet-class>
     </servlet>
-<<<<<<< Updated upstream
-=======
+
     <servlet>
         <servlet-name>AboutUsServlet</servlet-name>
         <servlet-class>Controller.AboutUsServlet</servlet-class>
@@ -42,7 +41,7 @@
         <servlet-name>ResetpasswordController</servlet-name>
         <servlet-class>Auther.resetPasswordController</servlet-class>
     </servlet>
->>>>>>> Stashed changes
+
     <servlet-mapping>
         <servlet-name>HomePageServlet</servlet-name>
         <url-pattern>/homepage</url-pattern>
@@ -59,8 +58,7 @@
         <servlet-name>PriceServlet</servlet-name>
         <url-pattern>/price</url-pattern>
     </servlet-mapping>
-<<<<<<< Updated upstream
-=======
+
     <servlet-mapping>
         <servlet-name>AboutUsServlet</servlet-name>
         <url-pattern>/about</url-pattern>
@@ -85,5 +83,5 @@
         <servlet-name>ResetpasswordController</servlet-name>
         <url-pattern>/resetPassword</url-pattern>
     </servlet-mapping>
->>>>>>> Stashed changes
+
 </web-app>
