@@ -85,7 +85,7 @@ public class loginController extends HttpServlet {
 
     throws ServletException, IOException {
         processRequest(request, response);
-            throws ServletException, IOException {
+            
         AccountsDAO aDAO = new AccountsDAO();
         String username = request.getParameter("username");
         String password = request.getParameter("password");

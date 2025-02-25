@@ -26,7 +26,6 @@
     </servlet>
     <servlet>
         <servlet-name>LoginController</servlet-name>
-
         <servlet-class>Auther.loginController</servlet-class>
     </servlet>
     <servlet>
@@ -40,7 +39,7 @@
     <servlet>
         <servlet-name>ResetpasswordController</servlet-name>
         <servlet-class>Auther.resetPasswordController</servlet-class>
-    
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>HomePageServlet</servlet-name>
