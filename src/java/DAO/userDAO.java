@@ -5,54 +5,71 @@
 package DAO;
 
 import DBConnect.DBContext;
-import java.util.ArrayList;
-import java.util.UUID;
 import Model.User;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 /**
  *
  * @author regio
  */
 public class userDAO extends DBContext {
 
-    public User getUserWithCredential(String credential) {
-        User user = null;
-
-        //Get user from database with username or email
-        String query = "SELECT *\n"
-                + "FROM [YellowBee].[dbo].[user]\n"
-                + "WHERE username = ? OR email = ?;";
+    public boolean isUsernameOrEmailTaken(String username, String email) {
+        String query = "SELECT a.AccountID FROM Accounts a JOIN Users u "
+                + "ON a.AccountID = u.AccountID WHERE a.Username = ? OR u.Email = ?";
         try {
-            //Replace '?' in query with user credential and execute the statement
             statement = connection.prepareStatement(query);
-            statement.setString(1, credential);
-            statement.setString(2, credential);
+            statement.setString(1, username);
+            statement.setString(2, email);
             result = statement.executeQuery();
+            return result.next(); // Trả về true nếu tồn tại
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
 
-            //Attempt to get user information from database
-            while (result.next()) {
-                int userId = result.getInt("user_id");
-                String username = result.getString("username");
-                String email = result.getString("email");
-                String phone = result.getString("phone");
-                String address = result.getString("address");               
-                int genderId = result.getInt("genderId");
-                int accountId = result.getInt("accountid");
+    // Thêm người dùng mới
+    public boolean createUser(String username, String email, String phone, int genderId, String address, String password) {
+        String accountQuery = "INSERT INTO Accounts (Username,"
+                + " Password, AccountStatusID) VALUES (?, ?, 1)";
+        String userQuery = "INSERT INTO Users (Email, Phone, "
+                + "Address, GenderID, AccountID) VALUES (?, ?, ?, ?, ?)";
 
-                //Build user using lombok 
-                user = User.builder()
-                        .userId(userId)
-                        .username(username)
-                        .email(email)
-                        .phone(phone)
-                        .address(address)                       
-                        .genderId(genderId)
-                        .accountId(accountId)
-                        .build();
+        try {
+            statement = connection.prepareStatement(accountQuery, PreparedStatement.RETURN_GENERATED_KEYS);
+            statement.setString(1, username);
+            statement.setString(2, password);
+            int affectedRows = statement.executeUpdate();
+
+            if (affectedRows == 0) {
+                return false;
             }
-            return user;
+
+            // Lấy AccountID vừa tạo
+            ResultSet generatedKeys = statement.getGeneratedKeys();
+            int accountId = -1;
+            if (generatedKeys.next()) {
+                accountId = generatedKeys.getInt(1);
+            } else {
+                return false;
+            }
+
+            // Thêm vào bảng Users
+            statement = connection.prepareStatement(userQuery);
+            statement.setString(1, email);
+            statement.setString(2, phone);
+            statement.setString(3, address);
+            statement.setInt(4, genderId);
+            statement.setInt(5, accountId);
+
+            return statement.executeUpdate() > 0;
         } catch (Exception e) {
             e.printStackTrace();
-            return null;
         }
+        return false;
     }
+
 }

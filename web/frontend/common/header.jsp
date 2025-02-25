@@ -15,7 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- <link rel="manifest" href="site.webmanifest"> -->
-<!--        <link rel="shortcut icon" type="image/x-icon" href="img/about/logo2.png">-->
+        <!--        <link rel="shortcut icon" type="image/x-icon" href="img/about/logo2.png">-->
         <!-- Place favicon.ico in the root directory -->
 
         <!-- CSS here -->
@@ -57,9 +57,31 @@
                                         </ul>
                                     </div>
 
+                                    <% 
+                                       String username = (String) session.getAttribute("username"); 
+                                    %>
+
+                                    <% if (username == null) { %>
+                                    <!-- Hiển thị nút Login nếu chưa đăng nhập -->
                                     <div class="book_btn d-none d-lg-block">
                                         <a class="boxed-btn3-line" href="login">Login</a>
                                     </div>
+                                    <% } else { %>
+                                    <!-- Hiển thị avatar nếu đã đăng nhập -->
+                                    <div class="user-avatar d-none d-lg-block dropdown">
+                                        <button class="btn btn-warning dropdown-toggle" type="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <%= username.substring(0, 1).toUpperCase() %>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="userDropdown">
+                                            <a class="dropdown-item profile-btn" href="profile.jsp">
+                                                <i class="fa fa-user"></i> Profile
+                                            </a>
+                                            <a class="dropdown-item logout-btn" href="logout.jsp">
+                                                <i class="fa fa-sign-out"></i> Logout
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <% } %> 
                                 </div>
                             </div>
                         </div>

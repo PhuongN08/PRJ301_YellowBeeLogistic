@@ -12,7 +12,44 @@
   -ms-flex-pack: start;
   justify-content: start;
 }
+.btn-warning, .dropdown-item {
+    color: white !important; /* Màu chữ trắng */
+    background-color: orange !important; /* Màu nền cam */
+    font-weight: bold;
+}
 
+/* Hover sẽ đậm hơn */
+.btn-warning:hover, .dropdown-item:hover {
+    background-color: #FF8C00 !important; /* Cam đậm */
+    color: white !important;
+}
+
+/* Màu cam cho icon */
+.dropdown-item i {
+    color: white !important;
+}
+
+/* Nút Logout */
+.logout-btn {
+    background-color: orange !important;
+    color: white !important;
+}
+
+/* Hover Logout */
+.logout-btn:hover {
+    background-color: #FF4500 !important; /* Màu cam đỏ */
+}
+
+/* Nút Profile */
+.profile-btn {
+    background-color: orange !important;
+    color: white !important;
+}
+
+/* Hover Profile */
+.profile-btn:hover {
+    background-color: #FF8C00 !important;
+}
 /* Normal desktop :1200px. */
 /* Normal desktop :992px. */
 /* Tablet desktop :768px. */

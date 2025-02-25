@@ -67,6 +67,7 @@ public class AccountsDAO extends DBContext {
         }
         return role;
     }
+
     public static void main(String[] args) {
         // Khởi tạo đối tượng ServicesDAO
         AccountsDAO aDAO = new AccountsDAO();

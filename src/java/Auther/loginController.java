@@ -10,6 +10,11 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+
+import DAO.AccountsDAO;
+import Model.Accounts;
+import jakarta.servlet.http.HttpSession;
+
 import DAO.AccountsDAO;
 import Model.Accounts;
 
@@ -17,12 +22,19 @@ import Model.Accounts;
  *
  * @author regio
  */
-public class LoginController extends HttpServlet {
+
+public class loginController extends HttpServlet {
+
+   
+    /** 
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
+
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
      *
+
      * @param request servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
@@ -70,17 +82,23 @@ public class LoginController extends HttpServlet {
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
+
+    throws ServletException, IOException {
+        processRequest(request, response);
             throws ServletException, IOException {
         AccountsDAO aDAO = new AccountsDAO();
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         Accounts account = aDAO.getAccount(username, password);
+
         if (account == null) {
             request.setAttribute("error", "Invalid username or password");
             request.getRequestDispatcher("/login.jsp").forward(request, response);
             return;
+
         } 
         else {
+
             String role = aDAO.getRoleByUsernameAndPassword(username, password);
 
             if (role == null) {
@@ -88,6 +106,16 @@ public class LoginController extends HttpServlet {
                 request.getRequestDispatcher("/login.jsp").forward(request, response);
                 return;
             }
+
+
+            // Lưu thông tin vào session
+            HttpSession session = request.getSession();
+            session.setAttribute("account", account);  // Lưu cả object Accounts
+            session.setAttribute("username", username);
+            session.setAttribute("role", role);
+
+            // Điều hướng dựa trên vai trò
+            
 
             // Lưu vào session
             request.getSession().setAttribute("username", username);

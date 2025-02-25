@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Model;
-import java.time.LocalDate;
 import lombok.Builder;
 import lombok.Data;
 
@@ -12,7 +11,7 @@ import lombok.Data;
 public class User {
 
     private int userId;
-    private String username;
+    private String fullName;
     private String email;
     private String password;
     private String phone;
@@ -20,4 +19,5 @@ public class User {
     private int genderId;
     private String image;
     private int accountId;
+    private int roleId;
 }
